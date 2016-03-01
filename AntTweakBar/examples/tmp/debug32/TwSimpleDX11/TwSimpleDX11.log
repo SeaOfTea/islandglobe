@@ -1,0 +1,25 @@
+﻿Build started 08/11/2012 13:58:42.
+     1>Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleDX11.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         fxc /Od /Zi /T vs_4_0_level_9_1 /E MainVS /Fh tmp\debug32\TwSimpleDX11\TwSimpleDX11_VS.h TwSimpleDX11.hlsl
+         fxc /Od /Zi /T ps_4_0_level_9_1 /E MainPS /Fh tmp\debug32\TwSimpleDX11\TwSimpleDX11_PS.h TwSimpleDX11.hlsl
+         
+         :VCEnd
+         Microsoft (R) Direct3D Shader Compiler 9.30.9200.16384
+         Copyright (C) Microsoft Corporation 2002-2011. All rights reserved.
+         
+         compilation header save succeeded; see G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\tmp\debug32\TwSimpleDX11\TwSimpleDX11_VS.h
+         Microsoft (R) Direct3D Shader Compiler 9.30.9200.16384
+         Copyright (C) Microsoft Corporation 2002-2011. All rights reserved.
+         
+         compilation header save succeeded; see G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\tmp\debug32\TwSimpleDX11\TwSimpleDX11_PS.h
+       FxCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\fxc.exe /nologo /E"main" /Fo "debug32\TwSimpleDX11.cso" TwSimpleDX11.hlsl 
+     1>FXC : error X3501: 'main': entrypoint not found
+         
+         compilation failed; no code produced
+     1>Done Building Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleDX11.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:24.76

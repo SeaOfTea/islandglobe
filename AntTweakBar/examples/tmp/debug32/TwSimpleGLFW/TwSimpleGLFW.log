@@ -1,0 +1,21 @@
+﻿Build started 08/11/2012 13:57:07.
+     1>Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleGLFW.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0700 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tmp\debug32\TwSimpleGLFW\\" /Fd"tmp\debug32\TwSimpleGLFW\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt TwSimpleGLFW.c
+         TwSimpleGLFW.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug32\TwSimpleGLFW.exe" /INCREMENTAL /NOLOGO /LIBPATH:../lib/debug /LIBPATH:../lib glfwdll.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"debug32\TwSimpleGLFW.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"debug32\TwSimpleGLFW.lib" /MACHINE:X86 /SAFESEH tmp\debug32\TwSimpleGLFW\TwSimpleGLFW.obj
+     1>TwSimpleGLFW.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         TwSimpleGLFW.vcxproj -> G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\debug32\TwSimpleGLFW.exe
+       PostBuildEvent:
+         if exist c:\sdk\glfw\lib\win32\glfw.dll  xcopy /y /f c:\sdk\glfw\lib\win32\glfw.dll debug32\.
+         if exist bin32\glfw.dll  xcopy /y /f bin32\glfw.dll debug32\.
+         
+         :VCEnd
+         G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\bin32\GLFW.dll -> G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\debug32\GLFW.dll
+         1 File(s) copied
+     1>Done Building Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleGLFW.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.86

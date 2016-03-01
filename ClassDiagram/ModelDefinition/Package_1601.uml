@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2704d5bb-df89-430a-811c-cf2a31b435f6"
+  name="MyApp" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="676a478e-f4e6-4074-b7cf-9fae815d003a">
+      <packageMoniker
+        Id="173d7d02-0327-4858-9caa-b226cecd89cd"
+        LastKnownName="DXApp"
+        LastKnownLocation="Package_1600.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8baac152-a21f-4a79-814c-1075de4e414a"
+        name="Texture2D"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3e51dd3-5e23-4052-bf4c-16b8dd20b289"
+        name="Sphere"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="6b1f3a6a-1b97-489e-9f87-da0d79a52eed"
+            isSubstitutable="false">
+            <classMoniker
+              Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc"
+              LastKnownName="Geometry"
+              LastKnownLocation="Package_1601.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ac9d516a-dbf7-4ebb-b0ec-7c8093755433"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="68a19736-b84c-46da-878e-ed4ac240414e"
+            name="Rotate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8a11c031-21e1-429c-a70b-9b1a26160b56"
+            name="Scale"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3e22488b-7f89-4042-92fc-6ac5b9db08c4"
+            name="SetTexture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="37247e06-1259-4300-a6ce-2954d25725ea"
+        name="Plane"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a7385771-be2e-4e20-b212-cc1cfc999e96"
+            isSubstitutable="false">
+            <classMoniker
+              Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc"
+              LastKnownName="Geometry"
+              LastKnownLocation="Package_1601.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="03acfbe5-0942-416b-a56b-effaeeb2434c"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bcc7d2bc-3d3b-4a64-8afb-0ac1c47bb3ee"
+            name="Rotate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2271c74d-e4ee-4b97-9f23-02b81bc3b718"
+            name="Scale"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="35ffdd4d-0dba-4dc2-80cb-2c1848669203"
+            name="SetTexture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8085a034-c1e0-4285-b1bb-8d08945734a5"
+        name="ParticleEmitter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ec13749a-9bbe-4a1e-b01d-4cf7058867dc">
+            <packageMoniker
+              Id="2704d5bb-df89-430a-811c-cf2a31b435f6"
+              LastKnownName="MyApp"
+              LastKnownLocation="Package_1601.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="43a24440-d109-4ae4-a8fa-8e25b36659e2"
+            isDerived="false"
+            sourceEndRoleName="ParticleEmitter"
+            targetEndRoleName="Particle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e4dc201e-e68d-4df0-9707-71879c9c9e56"
+              LastKnownName="Particle"
+              LastKnownLocation="Package_1601.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dfeda540-8f88-424b-be64-758bdf6a8ac2"
+                  name="ParticleEmitter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="589e8060-83d0-4195-a589-c70409df7a24"
+                  name="Particle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="df547adb-cb40-444f-a786-df83d061a1ca"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4401f284-2a41-4dbf-b3fc-3f784f348f09"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="15c28ce2-bd65-4978-a118-2ad72d0cdff7"
+            name="ListOfParticles"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="15ea7518-f82b-423b-afd7-4d7e330c1e2b"
+            name="isEnabled"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a29fb5e6-a518-4727-a999-5587dc3f3253"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4299086b-7c50-40fe-897d-0472e1721da1"
+            name="TypeOfEmitter"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cfe78c91-43a2-458f-860d-270e197772a8"
+            name="Enable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b0b5ab9f-9ba9-4922-aa48-e4856c4afdf3"
+            name="AddParticle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6effbcf1-fd83-4015-b425-7022ff05cbe7"
+            name="RemoveParticle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="99a51a78-f231-483d-aa22-947a6d796b03"
+            name="Emit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="78d30671-94e2-4ad2-b460-78b6fab4377d"
+            name="ClearParticleList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="96a3a699-bdba-40b9-b809-f1ec1a539dc9"
+            name="GetNumberOfParticles"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0962c048-a52a-4cd9-88cb-5943a29cbc41"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="681514d7-d8d9-48a1-8c95-880d1b4c5905"
+            name="RandomVelocity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d854cb3c-791c-4259-b20f-132e58ae851d"
+            name="SetEmitterType"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e4dc201e-e68d-4df0-9707-71879c9c9e56"
+        name="Particle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6e910f75-557d-4417-a862-4d6beaf7d8ce"
+            name="Speed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bb98ce79-9671-4483-8e09-a6c6b827ca95"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bc67badf-7b63-407c-96f9-1332a7ba7be3"
+            name="Energy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="097680d7-4e4d-49a4-919f-148bd7aab01e"
+            name="Texture"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f8229acd-dbe5-4f05-b312-3628843c8560"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70c9988f-a1ef-4db0-9520-b6555a49149c"
+            name="Light"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6308cb50-8f25-4032-ac82-ae55e6ffa1d0"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a52b8c8a-8059-4895-94d4-1914e2b0eda8"
+            name="SetPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="497963c9-4325-49f9-8ce1-ffa63b4cfbeb"
+            name="getPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1ad1d207-b39c-48b4-80d5-fa4bbd19fba6"
+            name="getSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8a722437-eabe-4091-b3a3-35d926789a9d"
+            name="SetEnergy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ded437ba-d36e-40f3-9757-d24ff0d528cc"
+            name="getEnergy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7641afd1-6f82-4462-b4dd-69931af1a394"
+        name="Model"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="bdf534f9-2c73-4591-bbd3-6eb3898624d9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc"
+              LastKnownName="Geometry"
+              LastKnownLocation="Package_1601.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e1d00d07-91c6-4f83-8766-64639fc55399"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e325065f-506c-43bf-95b3-a2e1b18e632c"
+            name="Rotate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9d2c90a7-3665-4700-956f-e28b0e5e2962"
+            name="Scale"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e7bad5e9-4e11-44c1-a23b-beca2a4bbc54"
+            name="SetTexture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1fef5deb-ade0-4973-b60f-35c07bc8f9ee"
+        name="Light"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8260f2e1-bb0a-4020-b418-ceafc38922ab">
+            <packageMoniker
+              Id="2704d5bb-df89-430a-811c-cf2a31b435f6"
+              LastKnownName="MyApp"
+              LastKnownLocation="Package_1601.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="35464b6e-4af1-4c12-bfb4-64cbb3e4ab75"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="94f07711-5334-4813-9ca9-6120a2f1ecfb"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="65529169-ad6e-40ba-903a-d3c55001e6bd"
+            name="Direction"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6b15034b-bb7b-46e2-9a5f-70bac5fe67c5"
+            name="Brightness"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="790a6edb-9816-4bae-90c4-e1a33dc5be0d"
+            name="SetPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d5913609-8904-4d80-97cb-7efaed1bcee8"
+            name="GetPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc"
+        name="Geometry"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1c3124a6-7e8f-47e6-9cc2-8f2e511ae753">
+            <packageMoniker
+              Id="2704d5bb-df89-430a-811c-cf2a31b435f6"
+              LastKnownName="MyApp"
+              LastKnownLocation="Package_1601.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="da534125-9ddc-4b86-bf2f-aeb9d4bbfac3"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5f1a43bb-a041-4e4b-92c8-d904334d2403"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6eddef3b-f625-4441-b4a3-50beff068daf"
+            name="Texture"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5ae48351-6829-49ce-afc5-6cb10561fcd7"
+            name="IndexBuffer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="494227d2-3ff6-42a9-b4cb-fdb383ac8936"
+            name="VertexBuffer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="37af3688-3e42-4c0b-8e29-381cb2e4f06a"
+            name="SetTexture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b30d7844-ee2f-4314-94fb-c5bbeb047e5c"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="de864346-978f-4b1e-b3a4-7e6c2f8d506a"
+            name="Scale"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6123e000-035b-406f-9db3-0da071a304a6"
+            name="Rotate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="99381c3b-81dc-4f6b-bee0-3ef45a1880d7"
+        name="Cube"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0ca1d5d8-8119-4efc-bb71-687b5f48e98c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc"
+              LastKnownName="Geometry"
+              LastKnownLocation="Package_1601.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d9910ce1-bbcf-44c1-9d70-1a6098603eb5"
+            name="SetTexture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="01ffa7ea-23bf-4b9b-98c4-b1460c77e0b4"
+            name="Draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ced99752-e9a3-4822-8360-e7d742f49bbd"
+            name="Scale"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8608b561-85b8-42d0-b839-a0edcb56268c"
+            name="Rotate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fd7cbf9e-c6ff-4624-81c5-f781d02fbd3a"
+        name="Camera"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6a79cd4f-309d-4cdb-962f-6edbfd82b4b9"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e0401384-ac1d-47ab-abd1-821154c8f3ac"
+            name="MoveSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c845cc16-b653-4871-98b5-dd878d2cd70b"
+            name="ViewMatrix"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4725d134-9f4a-4c84-9b1b-754f9874f479"
+            name="LookTo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ad5ced71-9613-4fbc-b1e5-4cd31ea8aaee"
+            name="SetViewMatrix"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cc95ff5c-8174-433c-b7c1-6e35955c7de2"
+            name="Forward"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c5b7e943-2037-4f2d-bc58-e9926afe5265"
+            name="Backward"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="80b6236a-7e5a-4063-b361-1b35b15f2573"
+            name="SetTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d80d5a23-9f45-427b-ad39-db5358bbbe9c"
+            name="SetPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="117cd269-f063-4665-b458-40d636373ee4"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="081cb902-af34-4e2c-835e-b5e493c393bc"
+        name="GeometryFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="9766c42c-f2ff-4d1e-b2f3-c109c7aa7674"
+            name="AddCube"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7efb3fe0-ff39-48cf-86cd-e5e22537d3e1"
+            name="AddModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cff38a22-b931-4624-bebb-0c35f1c1d9b8"
+            name="AddPlane"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="587051c0-8d1c-4fce-a55f-8556f29b74f9"
+            name="AddSphere"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

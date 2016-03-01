@@ -1,0 +1,18 @@
+﻿Build started 12/04/2013 17:08:29.
+     1>Project "Z:\BaseProject\BaseProject\BaseProject.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\BaseProject.unsuccessfulbuild".
+       CustomBuild:
+         Performing Custom Build Tools
+         Z:\BaseProject\BaseProject\Effects.fx(40,13): Unrecognized RHS value in assignment: 'SOILD'
+         
+         compilation failed; no code produced
+         Microsoft (R) Direct3D Shader Compiler 9.29.952.3111
+         Copyright (C) Microsoft Corporation 2002-2009. All rights reserved.
+         
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(151,5): error MSB6006: "cmd.exe" exited with code 1.
+     1>Done Building Project "Z:\BaseProject\BaseProject\BaseProject.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.27

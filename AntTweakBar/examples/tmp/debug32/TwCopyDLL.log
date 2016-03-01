@@ -1,0 +1,13 @@
+﻿Build started 08/11/2012 13:57:07.
+     1>Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwCopyDLL.vcxproj" on node 3 (Build target(s)).
+     1>PreBuildEvent:
+         if exist ..\lib\debug\AntTweakBar.dll ( xcopy /y /f ..\lib\debug\AntTweakBar.dll debug32 ) else ( xcopy /y /f ..\lib\AntTweakBar.dll debug32 )
+         
+         :VCEnd
+         G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\lib\AntTweakBar.dll -> G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\debug32\AntTweakBar.dll
+         1 File(s) copied
+     1>Done Building Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwCopyDLL.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.46

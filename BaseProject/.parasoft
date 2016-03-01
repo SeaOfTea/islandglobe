@@ -1,0 +1,31 @@
+#Tue Oct 30 16:06:25 GMT+00:00 2012
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.cdt.configuration=CPPTEST_USE_ACTIVE_CONFIG
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.c.win32.x86=cl.exe
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.cpp.win32.x86=cl.exe
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.compiler.family.win32.x86=vc_10_0
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.compiler.options.win32.x86=${cpptest\:original_options} -DPARASOFT_CPPTEST -I.
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.connected.6x.projects=
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.dependency.files.paths=${project_loc}/Makefile
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.dsp.env.var.mode=ENV_PATCH_PREPEND_MODE
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.edg.multibyte.chars.is.source.handling=AUTO
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.evc.env.var.mode=ENV_PATCH_PREPEND_MODE
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.linker.command.win32.x86=link.exe
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.linker.options.win32.x86=${cpptest\:original_options} ${cpptest\:project_lib_files}
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.make.command.line=make -i -B CXX\=${CPPTEST_SCAN} CC\=${CPPTEST_SCAN} LD\=${CPPTEST_SCAN}
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.make.scan.hash.code.validation=true
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.make.working.dir=${project_loc}
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.make_always_build=false
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.ode_auto_scan_mode=on_changes
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.ode_delete_bdf_postaction=false
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.ode_incremental_build=false
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.ode_options_dir=${project_loc}/cpptestscan.bdf
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.preference.store.version=1.1
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.run_orig_cmd_for_parallel_proj_bdf=true
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.runtime.location=${cpptest\:engine_loc}/runtime
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.synchronize_with_project_settings=true
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.test.case.location.patterns=*
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.test.ware.location=${workspace_loc}/.cpptest/${project_name}
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.vc71.configuration=CPPTEST_USE_ACTIVE_CONFIG
+BaseProject/BaseProject//com.parasoft.xtest.checkers.api.cpp.options.working.dir=${project_loc}
+project.path.356d9756-369e-4352-bc55-bc1bafaafcb3=BaseProject/BaseProject
+version=1

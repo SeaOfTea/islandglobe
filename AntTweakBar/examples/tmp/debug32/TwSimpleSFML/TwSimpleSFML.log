@@ -1,0 +1,42 @@
+﻿Build started 08/11/2012 13:57:13.
+     1>Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleSFML.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0700 /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tmp\debug32\TwSimpleSFML\\" /Fd"tmp\debug32\TwSimpleSFML\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TwSimpleSFML.cpp
+         TwSimpleSFML.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug32\TwSimpleSFML.exe" /INCREMENTAL /NOLOGO /LIBPATH:../lib/debug /LIBPATH:../lib "sfml-system-s.lib" "sfml-window-s.lib" "sfml-graphics-s.lib" opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"debug32\TwSimpleSFML.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"debug32\TwSimpleSFML.lib" /MACHINE:X86 /SAFESEH tmp\debug32\TwSimpleSFML\TwSimpleSFML.obj
+     1>TwSimpleSFML.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ) referenced in function "private: static enum sf::Key::Code __cdecl sf::priv::WindowImplWin32::VirtualKeyCodeToSF(unsigned int,long)" (?VirtualKeyCodeToSF@WindowImplWin32@priv@sf@@CA?AW4Code@Key@3@IJ@Z)
+     1>sfml-graphics-s.lib(RenderWindow.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-graphics-s.lib(ImageLoader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(VideoMode.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(Window.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(VideoModeSupport.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(WindowImpl.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-graphics-s.lib(RenderWindow.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-graphics-s.lib(ImageLoader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(VideoMode.obj) : error LNK2019: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ) referenced in function "protected: bool __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Grow(unsigned int,bool)" (?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IAE_NI_N@Z)
+     1>sfml-window-s.lib(Window.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(VideoModeSupport.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(WindowImpl.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+     1>sfml-window-s.lib(Window.obj) : error LNK2019: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ) referenced in function "public: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Unlock(void)" (?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ)
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ)
+     1>sfml-graphics-s.lib(ImageLoader.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ)
+     1>sfml-window-s.lib(Window.obj) : error LNK2019: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ) referenced in function "public: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Lock(void)" (?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ)
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ)
+     1>sfml-graphics-s.lib(ImageLoader.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ)
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2019: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z) referenced in function "public: void __thiscall std::locale::facet::_Register(void)" (?_Register@facet@locale@std@@QAEXXZ)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+     1>sfml-window-s.lib(WindowImplWin32.obj) : error LNK2019: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z) referenced in function "public: __thiscall std::_Locinfo::_Locinfo(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0_Locinfo@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z)
+     1>sfml-graphics-s.lib(Image.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z)
+     1>debug32\TwSimpleSFML.exe : fatal error LNK1120: 6 unresolved externals
+     1>Done Building Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleSFML.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.45

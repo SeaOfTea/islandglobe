@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a701f35c-2779-49b2-8993-ba59daccd237" name="classes" linkedPackageId="52ab7f3d-29ff-440e-81d4-81d31f4ec801" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f670f6e3-799c-42dc-af80-b8594943029d" name="Particle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4dc201e-e68d-4df0-9707-71879c9c9e56" />
+        <ownedAttributesInternal>
+          <property Id="d23e6cce-309e-4443-a47e-c1a70f40fbf5" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e910f75-557d-4417-a862-4d6beaf7d8ce" />
+          </property>
+          <property Id="30704222-530a-4a50-ba70-c3a3800c7a54" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bb98ce79-9671-4483-8e09-a6c6b827ca95" />
+          </property>
+          <property Id="7a83bd0c-a95e-42c0-9927-593a0c1aef81" name="Energy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bc67badf-7b63-407c-96f9-1332a7ba7be3" />
+          </property>
+          <property Id="f83bb11b-8fd4-4d0f-8c4f-e42a0312d8ea" name="Texture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="097680d7-4e4d-49a4-919f-148bd7aab01e" />
+          </property>
+          <property Id="2803e096-d1cd-4ee0-af15-5c309e68d5fd" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8229acd-dbe5-4f05-b312-3628843c8560" />
+          </property>
+          <property Id="f0b0be4c-3de2-4fab-b64c-fbe7f9a52b7d" name="Light" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="70c9988f-a1ef-4db0-9520-b6555a49149c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d14c2588-46cf-44b4-95ba-3eef04711dbf" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6308cb50-8f25-4032-ac82-ae55e6ffa1d0" />
+          </operation>
+          <operation Id="53119de2-ef7d-46bc-b91b-f9e3bee97277" name="SetPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a52b8c8a-8059-4895-94d4-1914e2b0eda8" />
+          </operation>
+          <operation Id="11936eb7-a80a-4d24-8923-07a38e9a1512" name="getPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="497963c9-4325-49f9-8ce1-ffa63b4cfbeb" />
+          </operation>
+          <operation Id="caf6ee36-4e85-4717-b759-1c1eae59d6a6" name="getSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ad1d207-b39c-48b4-80d5-fa4bbd19fba6" />
+          </operation>
+          <operation Id="04828a01-6436-443d-abaa-08a410da2518" name="SetEnergy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a722437-eabe-4091-b3a3-35d926789a9d" />
+          </operation>
+          <operation Id="67f3fff5-c22c-41cd-ab5d-e031092315fa" name="getEnergy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ded437ba-d36e-40f3-9757-d24ff0d528cc" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="65152881-2fe7-443f-992c-b42018c7ebb5" name="ParticleEmitter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8085a034-c1e0-4285-b1bb-8d08945734a5" />
+        <targetEnds>
+          <association Id="47fdaa6d-cc5d-4a78-b905-b247eb4226f7" isDerived="false" sourceEndRoleName="ParticleEmitter" targetEndRoleName="Particle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f670f6e3-799c-42dc-af80-b8594943029d" LastKnownName="Particle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a28f937d-d0b4-4748-83fb-c33ff7e709e1" name="ParticleEmitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dfeda540-8f88-424b-be64-758bdf6a8ac2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f3fc6fc-fcda-43ca-be9b-c177026b9244" name="Particle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ac247695-c811-44a8-a505-b31e20031305" name="Lower" value="1">
+                      <elementDefinition Id="df547adb-cb40-444f-a786-df83d061a1ca" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="11ac6819-97dc-470b-9c91-b38418ec9261" name="Upper" value="*">
+                      <elementDefinition Id="4401f284-2a41-4dbf-b3fc-3f784f348f09" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="589e8060-83d0-4195-a589-c70409df7a24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43a24440-d109-4ae4-a8fa-8e25b36659e2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c951decd-8733-4416-befc-570dc8ba7c94" name="ListOfParticles" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15c28ce2-bd65-4978-a118-2ad72d0cdff7" />
+          </property>
+          <property Id="c75b4b2f-9001-454c-9ad5-08de23ec035d" name="isEnabled" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15ea7518-f82b-423b-afd7-4d7e330c1e2b" />
+          </property>
+          <property Id="6a5200a6-30c1-43d7-9b39-f8d8de12381e" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a29fb5e6-a518-4727-a999-5587dc3f3253" />
+          </property>
+          <property Id="0145959a-9335-48cb-ae6b-1b83b4487eaf" name="TypeOfEmitter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4299086b-7c50-40fe-897d-0472e1721da1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1a171a44-29f0-4964-98cc-d95501fea7e1" name="Enable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cfe78c91-43a2-458f-860d-270e197772a8" />
+          </operation>
+          <operation Id="a7a6d3f8-9bd9-4ebe-8253-4fdae7a46923" name="AddParticle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b0b5ab9f-9ba9-4922-aa48-e4856c4afdf3" />
+          </operation>
+          <operation Id="ddc82783-2c5e-4bbc-89c5-f028ba5ab6f9" name="RemoveParticle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6effbcf1-fd83-4015-b425-7022ff05cbe7" />
+          </operation>
+          <operation Id="393b1aa5-52f6-47a9-95c3-534885413a72" name="Emit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99a51a78-f231-483d-aa22-947a6d796b03" />
+          </operation>
+          <operation Id="155314a3-208f-4cc2-a994-15b6ab693c45" name="ClearParticleList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78d30671-94e2-4ad2-b460-78b6fab4377d" />
+          </operation>
+          <operation Id="c4e51d1c-30e2-496a-87df-997e4c32b7ce" name="GetNumberOfParticles" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96a3a699-bdba-40b9-b809-f1ec1a539dc9" />
+          </operation>
+          <operation Id="8ee05d61-00b9-45db-9d71-256b91ce21e2" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0962c048-a52a-4cd9-88cb-5943a29cbc41" />
+          </operation>
+          <operation Id="6a84332f-65e7-4701-87e3-6bb0a2553a6a" name="RandomVelocity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="681514d7-d8d9-48a1-8c95-880d1b4c5905" />
+          </operation>
+          <operation Id="178c5d34-3204-4dc0-8e94-2907788aac3b" name="SetEmitterType" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d854cb3c-791c-4259-b20f-132e58ae851d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d1ea1bb2-191d-45c6-afe1-8a02b7a7c1cf" name="Geometry" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="becfc46f-f20c-46ef-bae7-159d37b3e2cc" />
+        <ownedAttributesInternal>
+          <property Id="37d69031-c8b4-473f-80a1-24422feae45b" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da534125-9ddc-4b86-bf2f-aeb9d4bbfac3" />
+          </property>
+          <property Id="6df521a4-79f6-449e-9e93-415070240fc4" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f1a43bb-a041-4e4b-92c8-d904334d2403" />
+          </property>
+          <property Id="2e04f167-3b29-477a-ad16-ec2563167338" name="Texture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6eddef3b-f625-4441-b4a3-50beff068daf" />
+          </property>
+          <property Id="2cce83de-ab11-4423-8ad0-6d16317b17ad" name="IndexBuffer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ae48351-6829-49ce-afc5-6cb10561fcd7" />
+          </property>
+          <property Id="c1a04bd6-96ae-46f7-b11f-17353666c152" name="VertexBuffer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="494227d2-3ff6-42a9-b4cb-fdb383ac8936" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="32917b81-8008-4f26-9a93-5c3424ffa0b8" name="SetTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37af3688-3e42-4c0b-8e29-381cb2e4f06a" />
+          </operation>
+          <operation Id="bed854a9-99c2-4da0-b7e9-5544fb77e01a" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b30d7844-ee2f-4314-94fb-c5bbeb047e5c" />
+          </operation>
+          <operation Id="71612854-de62-4cba-83c1-732e834bbc89" name="Scale" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="de864346-978f-4b1e-b3a4-7e6c2f8d506a" />
+          </operation>
+          <operation Id="9c54e597-6369-4d3c-8aa1-18296001c104" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6123e000-035b-406f-9db3-0da071a304a6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4be8aa75-571e-4511-b3f5-4ee0ab52c34d" name="Cube" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99381c3b-81dc-4f6b-bee0-3ef45a1880d7" />
+        <generalsInternal>
+          <generalization Id="09767ea7-5d6e-4bac-9534-bc3597b74486" isSubstitutable="false">
+            <classMoniker Id="d1ea1bb2-191d-45c6-afe1-8a02b7a7c1cf" LastKnownName="Geometry" />
+            <elementDefinition Id="0ca1d5d8-8119-4efc-bb71-687b5f48e98c" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="dabc3a70-e7d7-4ccf-b378-86a6cf928ad4" name="SetTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d9910ce1-bbcf-44c1-9d70-1a6098603eb5" />
+          </operation>
+          <operation Id="346f62cc-f0e1-4da8-a30b-cc683f1c94d9" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01ffa7ea-23bf-4b9b-98c4-b1460c77e0b4" />
+          </operation>
+          <operation Id="8519c0a2-247b-4021-827f-2133d4dcd577" name="Scale" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ced99752-e9a3-4822-8360-e7d742f49bbd" />
+          </operation>
+          <operation Id="a0d8ce7e-93f3-4c20-aeef-d08dd82d78a8" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8608b561-85b8-42d0-b839-a0edcb56268c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c27265d5-09d8-4ef0-ad75-880d3c12770a" name="Camera" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd7cbf9e-c6ff-4624-81c5-f781d02fbd3a" />
+        <ownedAttributesInternal>
+          <property Id="6aa46e33-d7d4-4446-9423-0f66a9a02ed3" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a79cd4f-309d-4cdb-962f-6edbfd82b4b9" />
+          </property>
+          <property Id="cd1e6994-1f7b-443d-b5a3-23e652212985" name="MoveSpeed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e0401384-ac1d-47ab-abd1-821154c8f3ac" />
+          </property>
+          <property Id="fc5e70fb-fef3-4302-a37e-23ba7653dd93" name="ViewMatrix" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c845cc16-b653-4871-98b5-dd878d2cd70b" />
+          </property>
+          <property Id="0351f508-fd69-42e3-baa1-cc697dc39f79" name="LookTo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4725d134-9f4a-4c84-9b1b-754f9874f479" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="eb89c0c7-d44c-4082-86a9-188b4887c39b" name="SetViewMatrix" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ad5ced71-9613-4fbc-b1e5-4cd31ea8aaee" />
+          </operation>
+          <operation Id="02c0509f-adc2-4deb-a7cc-4b2da3623e22" name="Forward" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cc95ff5c-8174-433c-b7c1-6e35955c7de2" />
+          </operation>
+          <operation Id="00b2ca82-6837-4c6f-b9bb-1b47e61ecf06" name="Backward" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5b7e943-2037-4f2d-bc58-e9926afe5265" />
+          </operation>
+          <operation Id="9e58adbe-d8e1-42bc-8f69-524a575b2071" name="SetTarget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="80b6236a-7e5a-4063-b361-1b35b15f2573" />
+          </operation>
+          <operation Id="cc09be1f-4ec5-46a6-a36f-f00dca8527fa" name="SetPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d80d5a23-9f45-427b-ad39-db5358bbbe9c" />
+          </operation>
+          <operation Id="9309626b-e133-40b1-b6d4-bb38f6dd3586" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="117cd269-f063-4665-b458-40d636373ee4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e1ebef80-3324-435f-adce-f8f85c5b766e" name="Light" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1fef5deb-ade0-4973-b60f-35c07bc8f9ee" />
+        <ownedAttributesInternal>
+          <property Id="7056ddf7-c97b-44d2-9a22-e3444a1852b3" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35464b6e-4af1-4c12-bfb4-64cbb3e4ab75" />
+          </property>
+          <property Id="80458ad9-5976-45cc-ad0d-a69f9aa91f32" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94f07711-5334-4813-9ca9-6120a2f1ecfb" />
+          </property>
+          <property Id="c379b53d-0618-40d7-8203-7bf4dab54ebb" name="Direction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65529169-ad6e-40ba-903a-d3c55001e6bd" />
+          </property>
+          <property Id="bf0f1e42-fa72-4255-ba1a-2f83700acca9" name="Brightness" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6b15034b-bb7b-46e2-9a5f-70bac5fe67c5" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5f8e1508-8b5c-4b04-a830-84160497684e" name="SetPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="790a6edb-9816-4bae-90c4-e1a33dc5be0d" />
+          </operation>
+          <operation Id="31f97236-e2f6-4e99-88fc-3f705a757db4" name="GetPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d5913609-8904-4d80-97cb-7efaed1bcee8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="291d59e7-a990-48b1-a0b6-80c3f9f88649" name="Model" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7641afd1-6f82-4462-b4dd-69931af1a394" />
+        <generalsInternal>
+          <generalization Id="92e28a70-b72a-4ff0-a53e-5a5e59be9dc7" isSubstitutable="false">
+            <classMoniker Id="d1ea1bb2-191d-45c6-afe1-8a02b7a7c1cf" LastKnownName="Geometry" />
+            <elementDefinition Id="bdf534f9-2c73-4591-bbd3-6eb3898624d9" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="6beb60b0-af6e-45aa-afe3-b9555bfb20e3" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e1d00d07-91c6-4f83-8766-64639fc55399" />
+          </operation>
+          <operation Id="6ef75009-e31e-4263-8d68-115c060fbf3c" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e325065f-506c-43bf-95b3-a2e1b18e632c" />
+          </operation>
+          <operation Id="09905d9e-866b-4e67-a951-293d27f19745" name="Scale" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9d2c90a7-3665-4700-956f-e28b0e5e2962" />
+          </operation>
+          <operation Id="d3815a0e-a2bc-44c0-ac30-707a2139ca7e" name="SetTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e7bad5e9-4e11-44c1-a23b-beca2a4bbc54" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="007577a8-f205-4681-ba2b-f445acb7c1c6" name="Plane" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37247e06-1259-4300-a6ce-2954d25725ea" />
+        <generalsInternal>
+          <generalization Id="0efa6546-ae8a-4538-9e66-111d598cbd6a" isSubstitutable="false">
+            <classMoniker Id="d1ea1bb2-191d-45c6-afe1-8a02b7a7c1cf" LastKnownName="Geometry" />
+            <elementDefinition Id="a7385771-be2e-4e20-b212-cc1cfc999e96" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b727fcb9-aae7-4c26-bac2-5999c18cd094" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03acfbe5-0942-416b-a56b-effaeeb2434c" />
+          </operation>
+          <operation Id="f57fcb07-30ae-45bd-a26f-9ae70c93896e" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bcc7d2bc-3d3b-4a64-8afb-0ac1c47bb3ee" />
+          </operation>
+          <operation Id="5a42b0d7-8f25-458f-9933-59044bf2027d" name="Scale" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2271c74d-e4ee-4b97-9f23-02b81bc3b718" />
+          </operation>
+          <operation Id="39edd26d-de95-4b42-be62-da03b50fdccf" name="SetTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="35ffdd4d-0dba-4dc2-80cb-2c1848669203" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99a83d05-a901-4e7a-9f7d-db7847687dca" name="Texture2D" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8baac152-a21f-4a79-814c-1075de4e414a" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d631e628-d82d-46dd-8bdb-5964d5ff561f" name="Sphere" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f3e51dd3-5e23-4052-bf4c-16b8dd20b289" />
+        <generalsInternal>
+          <generalization Id="e68ccbed-9bde-48cb-8fea-0198525db466" isSubstitutable="false">
+            <classMoniker Id="d1ea1bb2-191d-45c6-afe1-8a02b7a7c1cf" LastKnownName="Geometry" />
+            <elementDefinition Id="6b1f3a6a-1b97-489e-9f87-da0d79a52eed" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="a024b461-5a15-471d-a740-e8fae724553e" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ac9d516a-dbf7-4ebb-b0ec-7c8093755433" />
+          </operation>
+          <operation Id="9df3db5f-bb8d-4631-adb4-eb768e946543" name="Rotate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="68a19736-b84c-46da-878e-ed4ac240414e" />
+          </operation>
+          <operation Id="2289f602-81f2-4122-a07e-a3c94be15b9b" name="Scale" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a11c031-21e1-429c-a70b-9b1a26160b56" />
+          </operation>
+          <operation Id="8e11416a-1b1d-432c-9bcb-1a185be65ff3" name="SetTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3e22488b-7f89-4042-92fc-6ac5b9db08c4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f9ca8df4-1403-47c5-9c20-3c3b267beee4" name="DxApp" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd493f06-4c00-4c55-9942-66c404823b09" />
+        <ownedOperationsInternal>
+          <operation Id="b7219420-1472-43c8-bb72-e2c28c97fad0" name="renderScene" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4734e639-1bb1-442e-b07b-d43f73a176e6" />
+          </operation>
+          <operation Id="a3632bb9-1a36-417d-a79f-b49ebb899ca6" name="updateScene" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2134aafc-7031-49bc-b91f-71778bc7b752" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dff9c067-ae86-4725-9b86-9f94995ca0bd" name="MyApp" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dfb93598-235e-43c1-b3b3-4f921da70607" />
+        <generalsInternal>
+          <generalization Id="7c4dfc4a-232b-4c12-bc5f-9f64d0764677" isSubstitutable="false">
+            <classMoniker Id="f9ca8df4-1403-47c5-9c20-3c3b267beee4" LastKnownName="DxApp" />
+            <elementDefinition Id="b8854ec9-430a-49f8-aac4-911ff8d1edb1" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="aee641c6-f4ac-4a95-b0d5-2f47fe268995" name="drawGeometry" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2d0f048-f489-444a-9408-ec82924daf0c" />
+          </operation>
+          <operation Id="a9ea4638-c590-4760-912e-3c57d7574cae" name="renderScene" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a521727-7dd3-44d5-943f-1c24c5bc983b" />
+          </operation>
+          <operation Id="f65d2e32-8f2a-40f1-b987-d71f5ede7968" name="buildFX" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a30e3902-6ec9-4019-9ff6-fc6e4b84029d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="52ab7f3d-29ff-440e-81d4-81d31f4ec801" name="ClassDiagram">
+    <elementDefinition Id="df4a6ae3-01fc-4556-919d-5241ba1ed010" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3b18f3af-12a9-4800-8c97-5fef847801ff">
+        <profileInstance Id="54a23844-2188-420e-b13e-0e27a41311a2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="eb0a2c95-24e4-4e8a-9d7c-aa4ff38444ed">
+        <profileInstance Id="e3dc6cec-d2a3-499b-88f7-446e5dd4a0e0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,21 @@
+﻿Build started 08/11/2012 13:57:07.
+     1>Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleGLUT.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0700 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"tmp\debug32\TwSimpleGLUT\\" /Fd"tmp\debug32\TwSimpleGLUT\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt TwSimpleGLUT.c
+         TwSimpleGLUT.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug32\TwSimpleGLUT.exe" /INCREMENTAL /NOLOGO /LIBPATH:../lib/debug /LIBPATH:../lib glut32.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"debug32\TwSimpleGLUT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"debug32\TwSimpleGLUT.lib" /MACHINE:X86 /SAFESEH tmp\debug32\TwSimpleGLUT\TwSimpleGLUT.obj
+     1>TwSimpleGLUT.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         TwSimpleGLUT.vcxproj -> G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\debug32\TwSimpleGLUT.exe
+       PostBuildEvent:
+         if exist c:\sdk\glut\lib\glut32.dll  xcopy /y /f c:\sdk\glut\lib\glut32.dll debug32\.
+         if exist bin32\glut32.dll  xcopy /y /f bin32\glut32.dll debug32\.
+         
+         :VCEnd
+         G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\bin32\glut32.dll -> G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\debug32\glut32.dll
+         1 File(s) copied
+     1>Done Building Project "G:\Year 4\Real Time Graphics\BaseProject\AntTweakBar\examples\TwSimpleGLUT.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.62
