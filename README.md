@@ -3,6 +3,8 @@ Overview
 -
 This is the source code for the graphics portfolio module (Real time graphics) for my fourth year at the University of Hull. Created using DirectX 11 API  using the C++ programming language. Featuring a range of lighting techniques and programmable shaders (HLSL)
 
+[![img](http://i.imgur.com/w7uGZcf.jpg?1)](https://www.youtube.com/watch?v=YYbrFQiNkB4)
+
 Installation and Compilation
 ------------
 Unfortunately I have not been successful in being able to compile this project, which leaves me very sad. It also appears that I did not save the last compiled binaries. So unless someone can give me a hand installing a lot of the deprecated DirectX 11 headers, for instance d3dx11.h etc. then it looks like I won't be able to get this working again.
